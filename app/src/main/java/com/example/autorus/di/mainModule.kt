@@ -18,7 +18,7 @@ val mainModule = module {
     single<PartsInteractor> { PartsInteractorImpl(get()) }
     single<PartsApi> {
         Retrofit.Builder()
-            .baseUrl("https://localhost:7001")
+            .baseUrl("https://193.39.160.82:7001")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
             .create(PartsApi::class.java)
