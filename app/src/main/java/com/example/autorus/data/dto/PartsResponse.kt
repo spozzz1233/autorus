@@ -1,6 +1,6 @@
 package com.example.autorus.data.dto
 
 import com.example.autorus.data.network.Response
-import com.example.autorus.domain.model.Parts
+import com.example.autorus.domain.model.Part
 
-class PartsResponse(val results: ArrayList<Parts>): Response()
+class PartsResponse(val results: List<Part>): Response()
