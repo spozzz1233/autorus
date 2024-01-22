@@ -13,3 +13,5 @@ data class Part(
 ): Parcelable
 
 var parts = listOf<Part>()
+
+var cart = ArrayList<Part>()
