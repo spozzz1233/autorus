@@ -27,15 +27,9 @@ class PartFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        viewModel.getParts()
+        //viewModel.getParts()
 
-        viewModel.partsLivedata.observe(viewLifecycleOwner) { parts ->
-            if (parts.isNotEmpty()) {
-                Log.d("parts", parts.toString())
-            } else {
-                Log.d("parts", "Список частей пуст")
-            }
-        }
+
     }
 
 }
