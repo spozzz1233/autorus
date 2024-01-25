@@ -22,10 +22,11 @@ class HomeAdapter(
     }
     override fun onBindViewHolder(holder: HomeAdapter.HomeViewHolder, position: Int) {
         holder.bind(parts[position])
-        val track = parts[position]
+        val part = parts[position]
         holder.itemView.setOnClickListener {
-            clickListener.onClick(track)
+            clickListener.onClick(part)
         }
+
     }
     override fun getItemCount(): Int = parts.size
     class HomeViewHolder(view: View) : RecyclerView.ViewHolder(view) {

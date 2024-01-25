@@ -19,16 +19,21 @@
         android:id="@+id/navigation_cart"
         android:name="com.example.autorus.ui.cart.fragment.CartFragment"
         android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_cart" />
+        tools:layout="@layout/fragment_cart" >
+        <action
+            android:id="@+id/action_navigation_cart_to_navigation_home"
+            app:destination="@id/navigation_home" />
+        <action
+            android:id="@+id/action_navigation_cart_to_partFragment"
+            app:destination="@id/partFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_profile"
         android:name="com.example.autorus.ui.profile.fragment.ProfileFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_profile" >
-        <action
-            android:id="@+id/action_navigation_profile_to_partFragment"
-            app:destination="@id/partFragment" />
+
     </fragment>
     <fragment
         android:id="@+id/partFragment"

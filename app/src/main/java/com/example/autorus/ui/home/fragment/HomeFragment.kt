@@ -40,7 +40,7 @@ class HomeFragment : Fragment() {
     private fun initial() {
         homeAdapter = HomeAdapter(clickListener = { part ->
             val bundle = Bundle()
-            bundle.putParcelable("track", part)
+            bundle.putParcelable("part", part)
             findNavController().navigate(
                 R.id.action_navigation_home_to_partFragment, bundle
             )

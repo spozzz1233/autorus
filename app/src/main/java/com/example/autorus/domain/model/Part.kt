@@ -8,9 +8,10 @@ data class Part(
     val id: Int,
     val partName: String,
     val price: Float,
-    val stockQuantity: Int,
-    val imageParts: String
-): Parcelable
+    val stockQuantity: Int
+): Parcelable{
+
+}
 
 var parts = listOf<Part>()
 
