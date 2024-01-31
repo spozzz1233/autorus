@@ -34,10 +34,18 @@
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_profile" >
 
+        <action
+            android:id="@+id/action_navigation_profile_to_feedbackScreenFragment"
+            app:destination="@id/feedbackScreenFragment" />
     </fragment>
     <fragment
         android:id="@+id/partFragment"
         android:name="com.example.autorus.ui.part.fragment.PartFragment"
         android:label="fragment_part"
         tools:layout="@layout/fragment_part" />
+    <fragment
+        android:id="@+id/feedbackScreenFragment"
+        android:name="com.example.autorus.ui.feedbackScreen.FeedbackScreenFragment"
+        android:label="fragment_feedback_screen"
+        tools:layout="@layout/fragment_feedback_screen" />
 </navigation>
