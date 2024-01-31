@@ -5,4 +5,11 @@
     <string name="title_notifications">Notifications</string>
     <string name="cart">Cart</string>
     <string name="Profile">Profile</string>
+    <string name="total_cost">Total cost</string>
+    <string name="send_an_order">Send an order</string>
+    <string name="the_basket_is_empty_now_n_order_something">The basket is empty now \n Order something</string>
+    <string name="to_orders">To orders</string>
+    <string name="home">Home</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

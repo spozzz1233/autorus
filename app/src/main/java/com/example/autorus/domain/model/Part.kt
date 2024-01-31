@@ -4,12 +4,15 @@ import android.os.Parcelable
 import kotlinx.parcelize.Parcelize
 
 @Parcelize
-data class Parts(
+data class Part(
     val id: Int,
-    val partName: Int,
+    val partName: String,
     val price: Float,
-    val stockQuantity: Int,
-    val imageParts: String
-): Parcelable
+    val stockQuantity: Int
+): Parcelable{
 
-var parts = ArrayList<Parts>()
+}
+
+var parts = listOf<Part>()
+
+var cart = ArrayList<Part>()

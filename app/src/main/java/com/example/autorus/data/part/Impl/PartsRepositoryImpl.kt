@@ -4,14 +4,14 @@ import com.example.autorus.data.dto.PartsResponse
 import com.example.autorus.data.network.NetworkClient
 import com.example.autorus.data.network.Resource
 import com.example.autorus.data.part.PartsRepository
-import com.example.autorus.domain.model.Parts
+import com.example.autorus.domain.model.Part
 import com.example.autorus.domain.part.ErrorType
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 
 
 class PartsRepositoryImpl(private val networkClient: NetworkClient) : PartsRepository {
-    override fun getParts(): Flow<Resource<List<Parts>>> = flow {
+    override fun getParts(): Flow<Resource<List<Part>>> = flow {
         try {
             val response = networkClient.doRequest()
             when (response.resultCode) {
